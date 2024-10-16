@@ -1,5 +1,3 @@
-Parece que você está enfrentando um problema com a formatação do código. Vamos reestruturar a descrição do projeto em um formato markdown simples, sem usar a formatação de código ou caixas pretas, e focar apenas no conteúdo.
-
 ### Library Management System API
 
 #### Descrição
