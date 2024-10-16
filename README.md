@@ -63,8 +63,5 @@ API simples para gerenciar uma biblioteca, permitindo operações de CRUD (Creat
 - `/basic-library/loans/`
 
 #### Autor
-- [Seu Nome] – [seu-email@exemplo.com]
+- [Álef Nunes Monteiro] – [monteiro.alef0@gmail.com]
 
----
-
-Com isso, você deve ter um README mais claro e organizado, sem o uso de caixas pretas. Se precisar de mais alguma coisa, é só avisar!
