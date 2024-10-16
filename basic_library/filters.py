@@ -54,10 +54,11 @@ class GenreFilter(filters.FilterSet):
         model = Genres
         fields = ['id', 'name']
 
+
 class LoanFilter(filters.FilterSet):
     id = filters.NumberFilter(field_name='id', lookup_expr=EQUALS)
-    client = filters.CharFilter(field_name='id_client__name', lookup_expr=LIKE)
-    book = filters.CharFilter(field_name='id_book__name', lookup_expr=LIKE)
+    id_client = filters.CharFilter(field_name='id_client__name', lookup_expr=LIKE)
+    id_book = filters.CharFilter(field_name='id_book__title', lookup_expr=LIKE)
     loan_day = filters.DateFilter(field_name='loan_day', lookup_expr=GTE)
     return_day = filters.DateFilter(field_name='return_day', lookup_expr=GTE)
 

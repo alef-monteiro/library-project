@@ -96,7 +96,7 @@ class Clients(ModelBase):
     )
 
 
-class Loans(models.Model):
+class Loans(ModelBase):
     id = models.BigAutoField(
         primary_key=True,
         db_column='id',

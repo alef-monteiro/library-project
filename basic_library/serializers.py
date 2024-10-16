@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from basic_library.models import Clients, Authors, Books, Genres
+from basic_library.models import Clients, Authors, Books, Genres, Loans
 
 
 # O serializers serve para formatar a saída da API
@@ -30,6 +30,10 @@ class GenreSerializer(serializers.ModelSerializer):
 
 
 class LoanSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    id_client = serializers.PrimaryKeyRelatedField(queryset=Clients.objects.all())
+    id_book = serializers.PrimaryKeyRelatedField(queryset=Books.objects.all())
+
     class Meta:
-        model = Genres
-        fields = ['id', 'name']
+        model = Loans
+        exclude = ['created_at']
